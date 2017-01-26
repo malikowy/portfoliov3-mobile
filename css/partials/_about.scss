@@ -5,16 +5,18 @@
     .about {
         padding: 20px 20px 60px;
 
-        h3 {
-            padding-top: 1.75em;
-        }
-
-        p {
-            text-align: justify;
-        }
-
         .about__poster {
             display: none;
+        }
+
+        .about__text {
+            h3 {
+                padding-top: 1.75em;
+            }
+
+            p {
+                text-align: justify;
+            }
         }
     }
 }
@@ -31,18 +33,25 @@
         margin-left : auto;
         margin-right: auto;
         margin-top  : 60px;
+        display     : -webkit-box;
+        display     : -ms-flexbox;
+        display     : flex;
 
         .about__poster {
-            display      : block;
-            float        : left;
-            padding-top  : 2vw;
-            padding-right: 2vw;
-            height       : 33vw;
+            display            : block;
+            padding-top        : 2vw;
+            padding-right      : 2vw;
+            height             : 33vw;
+            max-height         : 600px;
+            -ms-flex-item-align: end;
+            align-self         : flex-end;
         }
 
-        h3 {
-            padding-top: 6vw;
-            margin-top : 0;
+        .about__text {
+            h3 {
+                padding-top: 6vw;
+                margin-top : 0;
+            }
         }
     }
 }
