@@ -58,7 +58,7 @@
         padding-bottom: 60px;
 
         .works-container {
-            h2 {
+            .works-container__title {
                 padding-top   : 0.7em;
                 padding-bottom: 1.5em;
             }
@@ -121,6 +121,7 @@
             & figure h2 {
                 word-spacing: -0.15em;
                 font-weight : 300;
+                font-size   : 2vw;
             }
 
             & figure h2 span {
@@ -135,8 +136,8 @@
             & figure p {
                 letter-spacing: 1px;
                 font-size     : 68.5%;
-                padding-top   : 5%;
-                padding-right : 10%;
+                padding-top   : 0.4vw;
+                padding-right : 0.5vw;
             }
             /* Individual effects */
             /*---------------*/
@@ -144,8 +145,8 @@
             /*---------------*/
             figure.effect-zoe:hover {
                 img {
-                    -webkit-filter: brightness(60%);
-                    filter: brightness(60%);
+                    -webkit-filter: brightness(50%);
+                    filter: brightness(50%);
                 }
             }
 
@@ -153,7 +154,7 @@
                 top               : auto;
                 bottom            : 0;
                 padding           : 0;
-                height            : 3.75em;
+                height            : 3vw;
                 background        : #fff;
                 color             : #3c4a50;
                 -webkit-transition: -webkit-transform 0.35s;
@@ -165,12 +166,13 @@
             }
 
             figure.effect-zoe h2 {
-                float: left;
+                float      : left;
+                padding-top: 0.3vw;
             }
 
             figure.effect-zoe p.icon-links a {
                 float    : right;
-                color    : #3c4a50;
+                color    : #64cbc0;
                 font-size: 1.4em;
             }
 
@@ -181,8 +183,8 @@
 
             figure.effect-zoe p.description {
                 position                   : absolute;
-                bottom                     : 7em;
-                padding-left               : 12%;
+                bottom                     : 6vw;
+                padding-left               : 1vw;
                 color                      : #fff;
                 text-transform             : none;
                 font-size                  : 90%;
