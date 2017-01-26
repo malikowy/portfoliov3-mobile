@@ -1,0 +1,54 @@
+/* _about.scss */
+/* Small screens*/
+/* min-width: 320px, mobile-only screens */
+@media only screen {
+    .about {
+        padding: 20px 20px 60px;
+
+        h3 {
+            padding-top: 1.75em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .about__poster {
+            display: none;
+        }
+    }
+}
+/* Medium screens*/
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {}
+/* Large screens*/
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+    .about {
+        height      : 35vw;
+        width       : 75vw;
+        padding     : 0 20px;
+        margin-left : auto;
+        margin-right: auto;
+        margin-top  : 60px;
+
+        .about__poster {
+            display      : block;
+            float        : left;
+            padding-top  : 2vw;
+            padding-right: 2vw;
+            height       : 33vw;
+        }
+
+        h3 {
+            padding-top: 6vw;
+            margin-top : 0;
+        }
+    }
+}
+/* XLarge screens*/
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) {}
+/* XXLarge screens*/
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {}

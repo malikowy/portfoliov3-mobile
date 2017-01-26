@@ -1,0 +1,21 @@
+/* main.scss */
+/* Page base*/
+@import "modules/colors";
+@import "modules/features";
+@import "partials/typography";
+@import "partials/buttons";
+/* Page content*/
+@import "partials/header";
+@import "partials/about";
+@import "partials/skills";
+@import "partials/works";
+@import "partials/contact";
+
+* {
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    position: relative;
+    width   : 100%;
+}

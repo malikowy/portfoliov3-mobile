@@ -1,0 +1,77 @@
+/* _header.scss */
+/* Small screens*/
+/* min-width: 320px, mobile-only screens */
+@media only screen {
+    .header {
+        background-image   : url($backgroundimg);
+        background-position: center;
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        text-align         : center;
+        position           : relative;
+
+        .header-author {
+            position: absolute;
+            top     : 0;
+            bottom  : 0;
+            left    : 0;
+            right   : 0;
+            margin  : auto;
+            padding : 5px;
+            width   : 50vw;
+            height  : 18vw;
+        }
+
+        .header-author__title {
+            border-top   : 3px;
+            border-bottom: 3px;
+            border-style : solid none solid none;
+            color        : $color-white;
+            padding      : 5px 0 8px;
+            font-size    : 6.1vw;
+            margin       : 0;
+            text-align   : center;
+        }
+
+        .header-author__subtitle {
+            color         : $color-white;
+            padding       : 0;
+            letter-spacing: 2px;
+            word-spacing  : 3px;
+            font-weight   : 400;
+            font-size     : 2.25vw;
+            margin-top    : 1vw;
+            margin-bottom : 0;
+        }
+    }
+}
+/* Medium screens*/
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {}
+/* Large screens*/
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+    .header {
+        .header-author {
+            width: 45vw;
+        }
+
+        .header-author__title {
+            padding  : 2px 0 20px;
+            font-size: 5.9vw;
+        }
+
+        .header-author__subtitle {
+            letter-spacing: 4px;
+            word-spacing  : 5px;
+            font-size     : 2.25vw;
+            margin-top    : 1vw;
+        }
+    }
+}
+/* XLarge screens*/
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) {}
+/* XXLarge screens*/
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {}
