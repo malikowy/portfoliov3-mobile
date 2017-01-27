@@ -1,15 +1,15 @@
 /* main.scss */
 /* Page base*/
-@import "modules/colors";
-@import "modules/features";
-@import "partials/typography";
-@import "partials/buttons";
+@import "modules/_colors";
+@import "modules/_features";
+@import "partials/_typography";
+@import "partials/_buttons";
 /* Page content*/
-@import "partials/header";
-@import "partials/about";
-@import "partials/skills";
-@import "partials/works";
-@import "partials/contact";
+@import "partials/_header";
+@import "partials/_about";
+@import "partials/_skills";
+@import "partials/_works";
+@import "partials/_contact";
 
 * {
     scroll-behavior: smooth;
