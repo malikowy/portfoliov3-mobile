@@ -29,10 +29,6 @@
 			height: 6.5vh;
 			margin: 5px;
 		}
-
-		.skills-list__tooltips-text {
-			display: none;
-		}
 	}
 }
 /* Medium screens*/
@@ -55,51 +51,111 @@
 				display: inline-block;
 				padding: 0 8px;
 			}
-		}
-
-		.skills-list__tooltips-text {
-			display: inline;
-		}
-
-		a {
-			&.skills-list__tooltips {
+			/* START TOOLTIP STYLES */
+			[tooltip] {
 				position: relative;
-				display : inline;
 			}
 
-			&.skills-list__tooltips span {
-				position     : absolute;
-				width        : 110px;
-				color        : #FFFFFF;
-				background   : rgba(0, 0, 0, 1);
-				height       : 22px;
-				line-height  : 22px;
+			[tooltip]::after,
+			[tooltip]::before {
+				text-transform     : none;
+				font-size          : 0.9em;
+				line-height        : 1;
+				-webkit-user-select: none;
+				-moz-user-select   : none;
+				-ms-user-select    : none;
+				user-select        : none;
+				pointer-events     : none;
+				position           : absolute;
+				display            : none;
+				opacity            : 0;
+			}
+
+			[tooltip]::before {
+				content: '';
+				border : 5px solid transparent;
+				z-index: 1;
+			}
+
+			[tooltip]::after {
+				content      : attr(tooltip);
+				font-family  : Helvetica, sans-serif;
 				text-align   : center;
-				visibility   : hidden;
-				border-radius: 3px;
-				font-size    : 0.9rem;
+				min-width    : 3em;
+				max-width    : 21em;
+				white-space  : nowrap;
+				overflow     : hidden;
+				text-overflow: ellipsis;
+				padding      : 1ch 1.5ch;
+				border-radius: 0.3ch;
+				box-shadow   : 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+				background   : #333;
+				color        : #fff;
+				z-index      : 1;
 			}
 
-			&.skills-list__tooltips span:after {
-				content      : '';
-				position     : absolute;
-				bottom       : 100%;
-				left         : 50%;
-				margin-left  : -8px;
-				width        : 0;
-				height       : 0;
-				border-bottom: 8px solid rgba(0, 0, 0, 1);
-				border-right : 8px solid transparent;
-				border-left  : 8px solid transparent;
+			[tooltip]:hover::after,
+			[tooltip]:hover::before {
+				display: block;
+			}
+			/* don't show empty tooltips */
+			[tooltip='']::after,
+			[tooltip='']::before {
+				display: none !important;
 			}
 
-			&:hover.skills-list__tooltips span {
-				visibility : visible;
-				opacity    : 0.7;
-				top        : 22px;
-				left       : 50%;
-				margin-left: -55px;
-				z-index    : 999;
+			[tooltip][flow^="down"]::before {
+				top                : 80%;
+				border-top-width   : 0;
+				border-bottom-color: #333;
+			}
+
+			[tooltip][flow^="down"]::after {
+				top: calc(80% + 5px);
+			}
+
+			[tooltip][flow^="down"]::after,
+			[tooltip][flow^="down"]::before {
+				left             : 50%;
+				-webkit-transform: translate(-50%, .5em);
+				transform        : translate(-50%, .5em);
+			}
+			/* KEYFRAMES */
+			@-webkit-keyframes tooltips-vert {
+				to {
+					opacity          : 0.9;
+					-webkit-transform: translate(-50%, 0);
+					transform        : translate(-50%, 0);
+				}
+			}
+			@keyframes tooltips-vert {
+				to {
+					opacity          : 0.9;
+					-webkit-transform: translate(-50%, 0);
+					transform        : translate(-50%, 0);
+				}
+			}
+			@-webkit-keyframes tooltips-horz {
+				to {
+					opacity          : 0.9;
+					-webkit-transform: translate(0, -50%);
+					transform        : translate(0, -50%);
+				}
+			}
+			@keyframes tooltips-horz {
+				to {
+					opacity          : 0.9;
+					-webkit-transform: translate(0, -50%);
+					transform        : translate(0, -50%);
+				}
+			}
+			/* FX All The Things */
+			[tooltip]:not([flow]):hover::after,
+			[tooltip]:not([flow]):hover::before,
+			[tooltip][flow^="down"]:hover::after,
+			[tooltip][flow^="down"]:hover::before {
+				-webkit-animation: tooltips-vert 300ms ease-out forwards;
+				animation        : tooltips-vert 300ms ease-out forwards;
 			}
 		}
 	}
