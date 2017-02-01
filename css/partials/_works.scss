@@ -2,49 +2,49 @@
 /* Small screens*/
 /* min-width: 320px, mobile-only screens */
 @media only screen {
-    .works {
-        background-color: rgba(100, 203, 192, 1);
-        text-align      : center;
-        padding-bottom  : 20px;
-        margin-left     : auto;
-        margin-right    : auto;
-        width           : 100%;
+	.works {
+		background-color: rgba(100, 203, 192, 1);
+		text-align      : center;
+		padding-bottom  : 20px;
+		margin-left     : auto;
+		margin-right    : auto;
+		width           : 100%;
 
-        .works-container {
-            margin-left : auto;
-            margin-right: auto;
-            width       : 86vw;
+		.works-container {
+			margin-left : auto;
+			margin-right: auto;
+			width       : 86vw;
 
-            .works-container__title {
-                margin        : 0;
-                padding-top   : 2.7em;
-                padding-bottom: 1.5em;
-            }
-            /* Common style */
-            & figure {
-                position  : relative;
-                overflow  : hidden;
-                margin    : 10px 1%;
-                min-width : 16vw;
-                max-width : 32vw;
-                max-height: 19vw;
-                width     : 48%;
-                background: #3085a3;
-                text-align: center;
-                cursor    : pointer;
-                display   : inline-block;
-                color     : #64cbc0;
+			.works-container__title {
+				margin        : 0;
+				padding-top   : 2.7em;
+				padding-bottom: 1.5em;
+			}
+			/* Common style */
+			& figure {
+				position  : relative;
+				overflow  : hidden;
+				margin    : 10px 1%;
+				min-width : 16vw;
+				max-width : 32vw;
+				max-height: 19vw;
+				width     : 48%;
+				background: #3085a3;
+				text-align: center;
+				cursor    : pointer;
+				display   : inline-block;
+				color     : #64cbc0;
 
-                img {
-                    position  : relative;
-                    display   : block;
-                    min-height: 100%;
-                    max-width : 100%;
-                    opacity   : 0.9;
-                }
-            }
-        }
-    }
+				img {
+					position  : relative;
+					display   : block;
+					min-height: 100%;
+					max-width : 100%;
+					opacity   : 0.9;
+				}
+			}
+		}
+	}
 }
 /* Medium screens*/
 /* min-width 641px, medium screens */
@@ -52,192 +52,192 @@
 /* Large screens*/
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-    .works {
-        height        : 35vw;
-        padding-top   : 60px;
-        padding-bottom: 60px;
+	.works {
+		height        : 35vw;
+		padding-top   : 60px;
+		padding-bottom: 60px;
 
-        .works-container {
-            .works-container__title {
-                padding-top   : 0.7em;
-                padding-bottom: 1.5em;
-            }
-            /* Common style */
-            & figure {
-                max-width: 20vw;
+		.works-container {
+			.works-container__title {
+				padding-top   : 0.7em;
+				padding-bottom: 1.5em;
+			}
+			/* Common style */
+			& figure {
+				max-width: 20vw;
 
-                figcaption {
-                    padding                    : 2em;
-                    color                      : #fff;
-                    text-transform             : uppercase;
-                    font-size                  : 1.25em;
-                    -webkit-backface-visibility: hidden;
-                    backface-visibility        : hidden;
+				figcaption {
+					padding                    : 2em;
+					color                      : #fff;
+					text-transform             : uppercase;
+					font-size                  : 1.25em;
+					-webkit-backface-visibility: hidden;
+					backface-visibility        : hidden;
 
-                    &::after,
-                    &::before {
-                        pointer-events: none;
-                    }
-                }
-                /* Anchor will cover the whole item by default */
-                /* For some effects it will show as a button */
-                figcaption > a {
-                    z-index    : 1000;
-                    text-indent: 200%;
-                    white-space: nowrap;
-                    font-size  : 0;
-                    opacity    : 0;
-                }
+					&::after,
+					&::before {
+						pointer-events: none;
+					}
+				}
+				/* Anchor will cover the whole item by default */
+				/* For some effects it will show as a button */
+				figcaption > a {
+					z-index    : 1000;
+					text-indent: 200%;
+					white-space: nowrap;
+					font-size  : 0;
+					opacity    : 0;
+				}
 
-                h2 {
-                    word-spacing: -0.15em;
-                    font-weight : 300;
-                    font-size   : 2vw;
-                    margin      : 0;
+				h2 {
+					word-spacing: -0.15em;
+					font-weight : 300;
+					font-size   : 2vw;
+					margin      : 0;
 
-                    span {
-                        font-weight: 800;
-                    }
-                }
+					span {
+						font-weight: 800;
+					}
+				}
 
-                p {
-                    margin        : 0;
-                    letter-spacing: 1px;
-                    font-size     : 68.5%;
-                    padding-top   : 0.4vw;
-                    padding-right : 0.5vw;
-                }
-            }
+				p {
+					margin        : 0;
+					letter-spacing: 1px;
+					font-size     : 68.5%;
+					padding-top   : 0.4vw;
+					padding-right : 0.5vw;
+				}
+			}
 
-            & figure figcaption,
-            & figure figcaption > a {
-                position: absolute;
-                top     : 0;
-                left    : 0;
-                width   : 100%;
-                height  : 100%;
-            }
-            /* Individual effects */
-            /*---------------*/
-            /***** Zoe *****/
-            /*---------------*/
-            figure.effect-zoe figure.effect-zoe:hover p.icon-links a:focus,
-            figure.effect-zoe:hover p.icon-links a:hover {
-                color: #252d31;
-            }
+			& figure figcaption,
+			& figure figcaption > a {
+				position: absolute;
+				top     : 0;
+				left    : 0;
+				width   : 100%;
+				height  : 100%;
+			}
+			/* Individual effects */
+			/*---------------*/
+			/***** Zoe *****/
+			/*---------------*/
+			figure.effect-zoe figure.effect-zoe:hover p.icon-links a:focus,
+			figure.effect-zoe:hover p.icon-links a:hover {
+				color: #252d31;
+			}
 
-            figure.effect-zoe {
-                figcaption {
-                    top               : auto;
-                    bottom            : 0;
-                    padding           : 0;
-                    height            : 3vw;
-                    background        : #fff;
-                    color             : #3c4a50;
-                    -webkit-transition: -webkit-transform 0.35s;
-                    transition        : -webkit-transform 0.35s;
-                    transition        : transform 0.35s;
-                    transition        : transform 0.35s, -webkit-transform 0.35s;
-                    -webkit-transform : translate3d(0,100%,0);
-                    transform         : translate3d(0,100%,0);
-                }
+			figure.effect-zoe {
+				figcaption {
+					top               : auto;
+					bottom            : 0;
+					padding           : 0;
+					height            : 3vw;
+					background        : #fff;
+					color             : #3c4a50;
+					-webkit-transition: -webkit-transform 0.35s;
+					transition        : -webkit-transform 0.35s;
+					transition        : transform 0.35s;
+					transition        : transform 0.35s, -webkit-transform 0.35s;
+					-webkit-transform : translate3d(0,100%,0);
+					transform         : translate3d(0,100%,0);
+				}
 
-                h2 {
-                    float      : left;
-                    padding-top: 0.3vw;
-                    display    : inline-block;
-                }
+				h2 {
+					float      : left;
+					padding-top: 0.3vw;
+					display    : inline-block;
+				}
 
-                p.icon-links a {
-                    float    : right;
-                    color    : #64cbc0;
-                    font-size: 1.4em;
+				p.icon-links a {
+					float    : right;
+					color    : #64cbc0;
+					font-size: 1.4em;
 
-                    span::before {
-                        display                : inline-block;
-                        padding                : 8px 10px;
-                        font-family            : FontAwesome;
-                        speak                  : none;
-                        -webkit-font-smoothing : antialiased;
-                        -moz-osx-font-smoothing: grayscale;
-                    }
-                }
+					span::before {
+						display                : inline-block;
+						padding                : 8px 10px;
+						font-family            : FontAwesome;
+						speak                  : none;
+						-webkit-font-smoothing : antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+				}
 
-                p.description {
-                    position                   : absolute;
-                    bottom                     : 6vw;
-                    padding-left               : 1vw;
-                    color                      : #fff;
-                    text-transform             : none;
-                    font-size                  : 90%;
-                    opacity                    : 0;
-                    -webkit-transition         : opacity 0.35s;
-                    transition                 : opacity 0.35s;
-                    -webkit-backface-visibility: hidden;
-                    /* Fix for Chrome 37.0.2062.120 (Mac) */
-                }
+				p.description {
+					position                   : absolute;
+					bottom                     : 6vw;
+					padding-left               : 1vw;
+					color                      : #fff;
+					text-transform             : none;
+					font-size                  : 90%;
+					opacity                    : 0;
+					-webkit-transition         : opacity 0.35s;
+					transition                 : opacity 0.35s;
+					-webkit-backface-visibility: hidden;
+					/* Fix for Chrome 37.0.2062.120 (Mac) */
+				}
 
-                h2,
-                p.icon-links a {
-                    -webkit-transition: -webkit-transform 0.35s;
-                    transition        : -webkit-transform 0.35s;
-                    transition        : transform 0.35s;
-                    transition        : transform 0.35s, -webkit-transform 0.35s;
-                    -webkit-transform : translate3d(0,200%,0);
-                    transform         : translate3d(0,200%,0);
-                }
-            }
+				h2,
+				p.icon-links a {
+					-webkit-transition: -webkit-transform 0.35s;
+					transition        : -webkit-transform 0.35s;
+					transition        : transform 0.35s;
+					transition        : transform 0.35s, -webkit-transform 0.35s;
+					-webkit-transform : translate3d(0,200%,0);
+					transform         : translate3d(0,200%,0);
+				}
+			}
 
-            figure.effect-zoe:hover {
-                img {
-                    -webkit-filter: brightness(50%);
-                    filter: brightness(50%);
-                }
+			figure.effect-zoe:hover {
+				img {
+					-webkit-filter: brightness(50%);
+					filter: brightness(50%);
+				}
 
-                figcaption,
-                h2,
-                p.icon-links a {
-                    -webkit-transform: translate3d(0,0,0);
-                    transform        : translate3d(0,0,0);
-                }
+				figcaption,
+				h2,
+				p.icon-links a {
+					-webkit-transform: translate3d(0,0,0);
+					transform        : translate3d(0,0,0);
+				}
 
-                h2 {
-                    -webkit-transition-delay: 0.05s;
-                    transition-delay        : 0.05s;
-                    padding-left            : 15px;
-                }
+				h2 {
+					-webkit-transition-delay: 0.05s;
+					transition-delay        : 0.05s;
+					padding-left            : 15px;
+				}
 
-                p.description {
-                    opacity: 1;
-                }
+				p.description {
+					opacity: 1;
+				}
 
-                p.icon-link {
-                    a:nth-child(3) {
-                        -webkit-transition-delay: 0.1s;
-                        transition-delay        : 0.1s;
-                    }
+				p.icon-link {
+					a:nth-child(3) {
+						-webkit-transition-delay: 0.1s;
+						transition-delay        : 0.1s;
+					}
 
-                    a:nth-child(2) {
-                        -webkit-transition-delay: 0.15s;
-                        transition-delay        : 0.15s;
-                    }
+					a:nth-child(2) {
+						-webkit-transition-delay: 0.15s;
+						transition-delay        : 0.15s;
+					}
 
-                    a:first-child {
-                        -webkit-transition-delay: 0.2s;
-                        transition-delay        : 0.2s;
-                    }
-                }
-            }
+					a:first-child {
+						-webkit-transition-delay: 0.2s;
+						transition-delay        : 0.2s;
+					}
+				}
+			}
 
-            .icon-preview::before {
-                content: '\f0c1';
-            }
+			.icon-preview::before {
+				content: '\f0c1';
+			}
 
-            .icon-github::before {
-                content: '\f09b';
-            }
-        }
-    }
+			.icon-github::before {
+				content: '\f09b';
+			}
+		}
+	}
 }
 /* XLarge screens*/
 /* min-width 1441px, xlarge screens */

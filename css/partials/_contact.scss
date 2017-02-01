@@ -1,60 +1,60 @@
 /* _contact.scss */
 /* Small screens*/
 @media only screen {
-    .contact {
-        background-color: $color-contact;
-        color           : $color-white;
-        text-align      : center;
+	.contact {
+		background-color: $color-contact;
+		color           : $color-white;
+		text-align      : center;
 
-        .contact-list {
-            h2 {
-                margin        : 0;
-                padding-top   : 1em;
-                padding-bottom: 0.6em;
-            }
+		.contact-list {
+			h2 {
+				margin        : 0;
+				padding-top   : 1em;
+				padding-bottom: 0.6em;
+			}
 
-            a {
-                color          : $color-white;
-                text-decoration: none;
-            }
+			a {
+				color          : $color-white;
+				text-decoration: none;
+			}
 
-            p {
-                margin-bottom: 0;
-            }
+			p {
+				margin-bottom: 0;
+			}
 
-            .contact-list__data {
-                padding-bottom: 15px;
-            }
+			.contact-list__data {
+				padding-bottom: 15px;
+			}
 
-            .contact-list__icons {
-                ul {
-                    list-style: none;
-                    margin    : 0;
-                    padding   : 0.5em 0 0;
+			.contact-list__icons {
+				ul {
+					list-style: none;
+					margin    : 0;
+					padding   : 0.5em 0 0;
 
-                    li {
-                        display      : inline-block;
-                        margin       : 10px 5px 10px 0;
-                        border-right : 1px solid $color-white;
-                        padding-right: 10px;
+					li {
+						display      : inline-block;
+						margin       : 10px 5px 10px 0;
+						border-right : 1px solid $color-white;
+						padding-right: 10px;
 
-                        &:first-child {
-                            padding-left: 15px;
-                        }
+						&:first-child {
+							padding-left: 15px;
+						}
 
-                        &:last-child {
-                            border: none;
-                        }
-                    }
-                }
-            }
+						&:last-child {
+							border: none;
+						}
+					}
+				}
+			}
 
-            .contact-list__footer {
-                padding-top   : 1.7em;
-                padding-bottom: 1.7em;
-            }
-        }
-    }
+			.contact-list__footer {
+				padding-top   : 1.7em;
+				padding-bottom: 1.7em;
+			}
+		}
+	}
 }
 /* Medium screens*/
 /* min-width 641px, medium screens */
@@ -62,37 +62,37 @@
 /* Large screens*/
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-    .contact {
-        padding-top: 60px;
+	.contact {
+		padding-top: 60px;
 
-        .contact-list {
-            .contact-list__icons {
-                .fa {
-                    -webkit-transition: transform 0.3s ease-in-out;
-                    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-                    transition        : -webkit-transform 0.3s ease-in-out;
-                    transition        : transform 0.3s ease-in-out;
-                    transition        : transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+		.contact-list {
+			.contact-list__icons {
+				.fa {
+					-webkit-transition: transform 0.3s ease-in-out;
+					-webkit-transition: -webkit-transform 0.3s ease-in-out;
+					transition        : -webkit-transform 0.3s ease-in-out;
+					transition        : transform 0.3s ease-in-out;
+					transition        : transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 
-                    &:hover {
-                        color            : $color-pink;
-                        -webkit-transform: $scaleimg $rotateimg;
-                        -webkit-transform: $scaleimg $rotateimg;
-                        transform        : $scaleimg $rotateimg;
-                    }
-                }
+					&:hover {
+						color            : $color-pink;
+						-webkit-transform: $scaleimg $rotateimg;
+						-webkit-transform: $scaleimg $rotateimg;
+						transform        : $scaleimg $rotateimg;
+					}
+				}
 
-                .fa-2x {
-                    font-size: 2.5em;
-                }
-            }
+				.fa-2x {
+					font-size: 2.5em;
+				}
+			}
 
-            .contact-list__footer {
-                padding-top   : 2em;
-                padding-bottom: 2em;
-            }
-        }
-    }
+			.contact-list__footer {
+				padding-top   : 2em;
+				padding-bottom: 2em;
+			}
+		}
+	}
 }
 /* XLarge screens*/
 /* min-width 1441px, xlarge screens */

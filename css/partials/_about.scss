@@ -2,23 +2,23 @@
 /* Small screens*/
 /* min-width: 320px, mobile-only screens */
 @media only screen {
-    .about {
-        padding: 20px 20px 60px;
+	.about {
+		padding: 20px 20px 60px;
 
-        .about__poster {
-            display: none;
-        }
+		.about__poster {
+			display: none;
+		}
 
-        .about__text {
-            h3 {
-                padding-top: 1.75em;
-            }
+		.about__text {
+			h3 {
+				padding-top: 1.75em;
+			}
 
-            p {
-                text-align: justify;
-            }
-        }
-    }
+			p {
+				text-align: justify;
+			}
+		}
+	}
 }
 /* Medium screens*/
 /* min-width 641px, medium screens */
@@ -26,34 +26,34 @@
 /* Large screens*/
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-    .about {
-        height      : 35vw;
-        width       : 75vw;
-        padding     : 0 20px;
-        margin-left : auto;
-        margin-right: auto;
-        padding-top : 60px;
-        display     : -webkit-box;
-        display     : -ms-flexbox;
-        display     : flex;
+	.about {
+		height      : 35vw;
+		width       : 75vw;
+		padding     : 0 20px;
+		margin-left : auto;
+		margin-right: auto;
+		padding-top : 60px;
+		display     : -webkit-box;
+		display     : -ms-flexbox;
+		display     : flex;
 
-        .about__poster {
-            display            : block;
-            padding-top        : 2vw;
-            padding-right      : 2vw;
-            height             : 33vw;
-            max-height         : 600px;
-            -ms-flex-item-align: end;
-            align-self         : flex-end;
-        }
+		.about__poster {
+			display            : block;
+			padding-top        : 2vw;
+			padding-right      : 2vw;
+			height             : 33vw;
+			max-height         : 600px;
+			-ms-flex-item-align: end;
+			align-self         : flex-end;
+		}
 
-        .about__text {
-            h3 {
-                padding-top: 6vw;
-                margin-top : 0;
-            }
-        }
-    }
+		.about__text {
+			h3 {
+				padding-top: 6vw;
+				margin-top : 0;
+			}
+		}
+	}
 }
 /* XLarge screens*/
 /* min-width 1441px, xlarge screens */

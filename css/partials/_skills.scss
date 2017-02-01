@@ -2,38 +2,38 @@
 /* Small screens*/
 /* min-width: 320px, mobile-only screens */
 @media only screen {
-    .skills {
-        padding         : 20px;
-        text-align      : center;
-        background-color: rgba(246, 246, 246, 1);
+	.skills {
+		padding         : 20px;
+		text-align      : center;
+		background-color: rgba(246, 246, 246, 1);
 
-        h2 {
-            padding-top: 1.50em;
-        }
+		h2 {
+			padding-top: 1.50em;
+		}
 
-        h3 {
-            padding-top: 1em;
-        }
+		h3 {
+			padding-top: 1em;
+		}
 
-        .skills-list {
-            list-style: none;
-            padding   : 0;
+		.skills-list {
+			list-style: none;
+			padding   : 0;
 
-            li {
-                display: inline-block;
-                padding: 0 2px;
-            }
-        }
+			li {
+				display: inline-block;
+				padding: 0 2px;
+			}
+		}
 
-        .skills-list__img {
-            height: 6.5vh;
-            margin: 5px;
-        }
+		.skills-list__img {
+			height: 6.5vh;
+			margin: 5px;
+		}
 
-        .skills-list__tooltips-text {
-            display: none;
-        }
-    }
+		.skills-list__tooltips-text {
+			display: none;
+		}
+	}
 }
 /* Medium screens*/
 /* min-width 641px, medium screens */
@@ -41,68 +41,68 @@
 /* Large screens*/
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-    .skills {
-        height        : 35vw;
-        padding-top   : 60px;
-        padding-bottom: 60px;
+	.skills {
+		height        : 35vw;
+		padding-top   : 60px;
+		padding-bottom: 60px;
 
-        h2 {
-            padding-top: 0;
-        }
+		h2 {
+			padding-top: 0;
+		}
 
-        .skills-list {
-            li {
-                display: inline-block;
-                padding: 0 8px;
-            }
-        }
+		.skills-list {
+			li {
+				display: inline-block;
+				padding: 0 8px;
+			}
+		}
 
-        .skills-list__tooltips-text {
-            display: inline;
-        }
+		.skills-list__tooltips-text {
+			display: inline;
+		}
 
-        a {
-            &.skills-list__tooltips {
-                position: relative;
-                display : inline;
-            }
+		a {
+			&.skills-list__tooltips {
+				position: relative;
+				display : inline;
+			}
 
-            &.skills-list__tooltips span {
-                position     : absolute;
-                width        : 110px;
-                color        : #FFFFFF;
-                background   : rgba(0, 0, 0, 1);
-                height       : 22px;
-                line-height  : 22px;
-                text-align   : center;
-                visibility   : hidden;
-                border-radius: 3px;
-                font-size    : 0.9rem;
-            }
+			&.skills-list__tooltips span {
+				position     : absolute;
+				width        : 110px;
+				color        : #FFFFFF;
+				background   : rgba(0, 0, 0, 1);
+				height       : 22px;
+				line-height  : 22px;
+				text-align   : center;
+				visibility   : hidden;
+				border-radius: 3px;
+				font-size    : 0.9rem;
+			}
 
-            &.skills-list__tooltips span:after {
-                content      : '';
-                position     : absolute;
-                bottom       : 100%;
-                left         : 50%;
-                margin-left  : -8px;
-                width        : 0;
-                height       : 0;
-                border-bottom: 8px solid rgba(0, 0, 0, 1);
-                border-right : 8px solid transparent;
-                border-left  : 8px solid transparent;
-            }
+			&.skills-list__tooltips span:after {
+				content      : '';
+				position     : absolute;
+				bottom       : 100%;
+				left         : 50%;
+				margin-left  : -8px;
+				width        : 0;
+				height       : 0;
+				border-bottom: 8px solid rgba(0, 0, 0, 1);
+				border-right : 8px solid transparent;
+				border-left  : 8px solid transparent;
+			}
 
-            &:hover.skills-list__tooltips span {
-                visibility : visible;
-                opacity    : 0.7;
-                top        : 22px;
-                left       : 50%;
-                margin-left: -55px;
-                z-index    : 999;
-            }
-        }
-    }
+			&:hover.skills-list__tooltips span {
+				visibility : visible;
+				opacity    : 0.7;
+				top        : 22px;
+				left       : 50%;
+				margin-left: -55px;
+				z-index    : 999;
+			}
+		}
+	}
 }
 /* XLarge screens*/
 /* min-width 1441px, xlarge screens */
