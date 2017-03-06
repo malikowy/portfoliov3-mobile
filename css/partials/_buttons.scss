@@ -1,47 +1,111 @@
 /* _buttons.scss */
+
+
 /* Small screens*/
+
+
 /* min-width: 320px, mobile-only screens */
+
 @media only screen {
-	.btn-mail {
-		float           : right;
-		background-color: $color-pink;
-		border          : 0;
-		color           : $color-white;
-		font-size       : 1rem;
-		width           : 100px;
-		height          : 30px;
-		margin-top      : 3px;
-		margin-right    : 20px;
-		padding         : 4px 8px;
-
-		a {
-			text-decoration: none;
-			display        : block;
-			color          : $color-white;
-		}
-	}
+    .buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .btn {
+        background-color: $color-pink;
+        border: 0;
+        color: $color-white;
+        font-size: 1rem;
+        width: 100px;
+        height: 30px;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        a {
+            text-decoration: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            color: $color-white;
+            height: inherit;
+            width: inherit;
+        }
+    }
 }
+
+
 /* Medium screens*/
-/* min-width 641px, medium screens */
-@media only screen and (min-width: 40.063em) {}
-/* Large screens*/
-/* min-width 1025px, large screens */
-@media only screen and (min-width: 64.063em) {
-	.btn-mail {
-		float     : left;
-		font-size : 1vw;
-		margin-top: 1vw;
-		width     : 7vw;
-		height    : 2.4vw;
-	}
 
-	.btn-mail:hover {
-		background-color: rgba(255,43,74,.7);
-	}
+
+/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) {}
+
+
+/* Large screens*/
+
+
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) {
+    .buttons {
+        -webkit-box-pack: flex-start;
+        -ms-flex-pack: flex-start;
+        justify-content: flex-start;
+        .btn {
+            font-size: 1vw;
+            margin-top: 1vw;
+            width: 7vw;
+            height: 2.4vw;
+        }
+        .btn:first-child {
+            margin-left: 0;
+        }
+        .btn:hover {
+            background-color: rgba(255, 43, 74, .7);
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
 }
+
+
 /* XLarge screens*/
+
+
 /* min-width 1441px, xlarge screens */
+
 @media only screen and (min-width: 90.063em) {}
+
+
 /* XXLarge screens*/
+
+
 /* min-width 1921px, xxlarge screens */
+
+@media only screen and (min-width: 120.063em) {}
+
+
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) {}
+
+
+/* XXLarge screens*/
+
+
+/* min-width 1921px, xxlarge screens */
+
 @media only screen and (min-width: 120.063em) {}

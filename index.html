@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/drawer.min.css">
 </head>
 
-<body class="drawer drawer--top drawer--navbarTopGutter" id="top">
+<body class="drawer drawer--top" id="top">
     <!-- MENU -->
     <header class="drawer-navbar drawer-navbar--fixed" role="banner">
         <div class="drawer-container">
@@ -69,7 +69,11 @@
                 <p>Po dwóch latach przerwy wznowiłem działalność w temacie tworzenia stron internetowych. Początkowo przypominałem sobie nabyte wiadomości na temat HTML i CSS. Dodatkowo zagłębiłem się w HTML5 i CSS3 oraz zacząłem korzystać z preprocesora
                     SCSS. Kolejnym językiem, którego się uczę jest JavaScript, a następny krok to opanowanie React.js.
                 </p>
-                <a class="scrollTo" href="#contact"><button class="btn-mail">#Kontakt</button></a>
+                <div class="buttons">
+                    <button class="btn"><a class="scrollTo" href="#contact">#Kontakt</a></button>
+                    <button class="btn"><a href="./downloads/Gabriel_Ignatiuk_CV_pl.pdf">#CV.pl</a></button>
+                    <button class="btn"><a href="./downloads/Gabriel_Ignatiuk_CV_eng.pdf">#CV.eng</a></button>
+                </div>
             </div>
         </section>
         <!-- SKILLS -->
@@ -108,10 +112,21 @@
 						</span>
 
                 </li>
+                <li>
+                    <span tooltip="JavaScript" flow="down">
+                    <img src="./img/icons/js-min.png" alt="JavaScript" class="skills-list__img">
+                    </span>
+                </li>
             </ul>
             <!-- TOOLS -->
             <h3>#Pracuję korzystając z:</h3>
             <ul class="skills-list">
+                <li>
+                    <span tooltip="VS Code" flow="down">
+							<img src="./img/icons/vscode-min.png" alt="VS Code" class="skills-list__img">
+						</span>
+
+                </li>
                 <li>
                     <span tooltip="GitHub Atom" flow="down">
 							<img src="./img/icons/atom-min.png" alt="Atom" class="skills-list__img">
@@ -147,9 +162,6 @@
             <h3>#Chcę opanować:</h3>
             <ul class="skills-list">
                 <li>
-                    <img src="./img/icons/js-min.png" alt="JavaScript" class="skills-list__img">
-                </li>
-                <li>
                     <img src="./img/icons/jquery-min.png" alt="jQuery" class="skills-list__img">
                 </li>
                 <li>
@@ -174,7 +186,9 @@
             <div class="works-container">
                 <h2 class="works-container__title">#Projekty wykonane</h2>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/mrr.png" alt="MRR page view">
+                    <a href="https://github.com/malikowy/MRR">
+                        <img src="./img/projects/mrr.png" alt="MRR page view">
+                    </a>
                     <figcaption>
                         <h2>Strona <span>MRR</span></h2>
                         <p class="icon-links">
@@ -185,7 +199,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/portfolio.png" alt="My first portfolio page">
+                    <a href="https://github.com/malikowy/portfoliov3-mobile">
+                        <img src="./img/projects/portfolio.png" alt="My first portfolio page">
+                    </a>
                     <figcaption>
                         <h2>Port<span>folio</span></h2>
                         <p class="icon-links">
@@ -196,7 +212,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/jwood.png" alt="My second project PSD to HTML">
+                    <a href="https://github.com/malikowy/j_wood_free">
+                        <img src="./img/projects/jwood.png" alt="My second project PSD to HTML">
+                    </a>
                     <figcaption>
                         <h2>J<span>Wood</span></h2>
                         <p class="icon-links">
@@ -207,7 +225,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/fitapp.png" alt="My third project PSD to HTML">
+                    <a href="https://github.com/malikowy/fitapp_page">
+                        <img src="./img/projects/fitapp.png" alt="My third project PSD to HTML">
+                    </a>
                     <figcaption>
                         <h2>Fit<span>App</span></h2>
                         <p class="icon-links">
@@ -218,7 +238,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/apollo.png" alt="My fourth project PSD to HTML">
+                    <a href="https://github.com/malikowy/apollo_page">
+                        <img src="./img/projects/apollo.png" alt="My fourth project PSD to HTML">
+                    </a>
                     <figcaption>
                         <h2><span>Apollo</span></h2>
                         <p class="icon-links">
@@ -229,7 +251,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/buckasur.png" alt="My fifth project PSD to HTML">
+                    <a href="https://github.com/malikowy/buckasur_page">
+                        <img src="./img/projects/buckasur.png" alt="My fifth project PSD to HTML">
+                    </a>
                     <figcaption>
                         <h2><span>Buckasur</span></h2>
                         <p class="icon-links">
@@ -240,7 +264,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/remcalc.png" alt="My own Rem/Px Calculator">
+                    <a href="https://github.com/malikowy/remCalc">
+                        <img src="./img/projects/remcalc.png" alt="My own Rem/Px Calculator">
+                    </a>
                     <figcaption>
                         <h2>Rem/Px<span>Calc</span></h2>
                         <p class="icon-links">
@@ -251,7 +277,9 @@
                     </figcaption>
                 </figure>
                 <figure class="effect-zoe">
-                    <img src="./img/projects/eos.png" alt="My sixth project PSD to HTML">
+                    <a href="https://github.com/malikowy/eos_page">
+                        <img src="./img/projects/eos.png" alt="My sixth project PSD to HTML">
+                    </a>
                     <figcaption>
                         <h2><span>Eos</span></h2>
                         <p class="icon-links">
@@ -267,11 +295,11 @@
         <footer class="contact" id="contact">
             <div class="contact-list">
                 <h2>#Dane kontaktowe</h2>
-                <address class=contact-list__data>
-						<p>Gabriel Ignatiuk</p>
-						<p>Telefon:<a class="phone__link" href="tel:+48600144708">600144708</a></p>
-						<p>Email:<a class="email__link" href="mailto:gabriel.ignatiuk@gmail.com">gabriel.ignatiuk@gmail.com</a></p>
-					</address>
+                <address class="contact-list__data">
+                    <p>Gabriel Ignatiuk</p>
+                    <p>Telefon: <a class="phone__link" href="tel:+48600144708">600144708</a></p>
+                    <p>Email: <a class="email__link" href="mailto:gabriel.ignatiuk@gmail.com">gabriel.ignatiuk@gmail.com</a></p>
+                </address>
                 <div class="contact-list__icons">
                     <ul>
                         <li>
@@ -296,7 +324,7 @@
                 </div>
                 <div class="contact-list__footer">
                     <p>Portfolio - Gabriel Ignatiuk</p>
-                    <p>Ostatnia aktualizacja: luty 2017</p>
+                    <p>Ostatnia aktualizacja: marzec 2017</p>
                 </div>
             </div>
         </footer>
