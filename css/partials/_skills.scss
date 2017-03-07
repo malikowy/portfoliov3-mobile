@@ -1,168 +1,190 @@
 /* _skills.scss */
+
+
 /* Small screens*/
+
+
 /* min-width: 320px, mobile-only screens */
+
 @media only screen {
-	.skills {
-		padding         : 20px;
-		text-align      : center;
-		background-color: rgba(246, 246, 246, 1);
-
-		h2 {
-			padding-top: 1.50em;
-		}
-
-		h3 {
-			padding-top: 1em;
-		}
-
-		.skills-list {
-			list-style: none;
-			padding   : 0;
-
-			li {
-				display: inline-block;
-				padding: 0 2px;
-			}
-		}
-
-		.skills-list__img {
-			height: 6.5vh;
-			margin: 5px;
-		}
-	}
+    .skills {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(246, 246, 246, 1);
+        h2 {
+            padding-top: 1.50em;
+        }
+        h3 {
+            padding-top: 1em;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            li {
+                display: inline-block;
+                padding: 0 2px;
+            }
+        }
+        .skills-list__img {
+            height: 6.5vh;
+            margin: 5px;
+        }
+    }
 }
+
+
 /* Medium screens*/
+
+
 /* min-width 641px, medium screens */
-@media only screen and (min-width: 40.063em) {}
-/* Large screens*/
-/* min-width 1025px, large screens */
-@media only screen and (min-width: 64.063em) {
-	.skills {
-		height        : 35vw;
-		padding-top   : 60px;
-		padding-bottom: 60px;
 
-		h2 {
-			padding-top: 0;
-		}
-
-		.skills-list {
-			li {
-				display: inline-block;
-				padding: 0 8px;
-			}
-			/* START TOOLTIP STYLES */
-			[tooltip] {
-				position: relative;
-			}
-
-			[tooltip]::after,
-			[tooltip]::before {
-				text-transform     : none;
-				font-size          : 0.9em;
-				line-height        : 1;
-				-webkit-user-select: none;
-				-moz-user-select   : none;
-				-ms-user-select    : none;
-				user-select        : none;
-				pointer-events     : none;
-				position           : absolute;
-				display            : none;
-				opacity            : 0;
-			}
-
-			[tooltip]::before {
-				content: '';
-				border : 5px solid transparent;
-				z-index: 1;
-			}
-
-			[tooltip]::after {
-				content      : attr(tooltip);
-				font-family  : Helvetica, sans-serif;
-				text-align   : center;
-				min-width    : 3em;
-				max-width    : 21em;
-				white-space  : nowrap;
-				overflow     : hidden;
-				text-overflow: ellipsis;
-				padding      : 1ch 1.5ch;
-				border-radius: 0.3ch;
-				box-shadow   : 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
-				background   : #333;
-				color        : #fff;
-				z-index      : 1;
-			}
-
-			[tooltip]:hover::after,
-			[tooltip]:hover::before {
-				display: block;
-			}
-			/* don't show empty tooltips */
-			[tooltip='']::after,
-			[tooltip='']::before {
-				display: none !important;
-			}
-
-			[tooltip][flow^="down"]::before {
-				top                : 80%;
-				border-top-width   : 0;
-				border-bottom-color: #333;
-			}
-
-			[tooltip][flow^="down"]::after {
-				top: calc(80% + 5px);
-			}
-
-			[tooltip][flow^="down"]::after,
-			[tooltip][flow^="down"]::before {
-				left             : 50%;
-				-webkit-transform: translate(-50%, .5em);
-				transform        : translate(-50%, .5em);
-			}
-			/* KEYFRAMES */
-			@-webkit-keyframes tooltips-vert {
-				to {
-					opacity          : 0.9;
-					-webkit-transform: translate(-50%, 0);
-					transform        : translate(-50%, 0);
-				}
-			}
-			@keyframes tooltips-vert {
-				to {
-					opacity          : 0.9;
-					-webkit-transform: translate(-50%, 0);
-					transform        : translate(-50%, 0);
-				}
-			}
-			@-webkit-keyframes tooltips-horz {
-				to {
-					opacity          : 0.9;
-					-webkit-transform: translate(0, -50%);
-					transform        : translate(0, -50%);
-				}
-			}
-			@keyframes tooltips-horz {
-				to {
-					opacity          : 0.9;
-					-webkit-transform: translate(0, -50%);
-					transform        : translate(0, -50%);
-				}
-			}
-			/* FX All The Things */
-			[tooltip]:not([flow]):hover::after,
-			[tooltip]:not([flow]):hover::before,
-			[tooltip][flow^="down"]:hover::after,
-			[tooltip][flow^="down"]:hover::before {
-				-webkit-animation: tooltips-vert 300ms ease-out forwards;
-				animation        : tooltips-vert 300ms ease-out forwards;
-			}
-		}
-	}
+@media only screen and (min-width: 40.063em) {
+    .skills {
+        .skills-list__img {
+            height: 4.5vh;
+            margin: 10px;
+        }
+    }
 }
+
+
+/* Large screens*/
+
+
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) {
+    .skills {
+        height: 35vw;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        h2 {
+            padding-top: 0;
+        }
+        .skills-list__img {
+            height: 6.5vh;
+            margin: 5px;
+        }
+        .skills-list {
+            li {
+                display: inline-block;
+                padding: 0 8px;
+            }
+            /* START TOOLTIP STYLES */
+            [tooltip] {
+                position: relative;
+            }
+            [tooltip]::after,
+            [tooltip]::before {
+                text-transform: none;
+                font-size: 0.9em;
+                line-height: 1;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                pointer-events: none;
+                position: absolute;
+                display: none;
+                opacity: 0;
+            }
+            [tooltip]::before {
+                content: '';
+                border: 5px solid transparent;
+                z-index: 1;
+            }
+            [tooltip]::after {
+                content: attr(tooltip);
+                font-family: Helvetica, sans-serif;
+                text-align: center;
+                min-width: 3em;
+                max-width: 21em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 1ch 1.5ch;
+                border-radius: 0.3ch;
+                box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+                background: #333;
+                color: #fff;
+                z-index: 1;
+            }
+            [tooltip]:hover::after,
+            [tooltip]:hover::before {
+                display: block;
+            }
+            /* don't show empty tooltips */
+            [tooltip='']::after,
+            [tooltip='']::before {
+                display: none !important;
+            }
+            [tooltip][flow^="down"]::before {
+                top: 80%;
+                border-top-width: 0;
+                border-bottom-color: #333;
+            }
+            [tooltip][flow^="down"]::after {
+                top: calc(80% + 5px);
+            }
+            [tooltip][flow^="down"]::after,
+            [tooltip][flow^="down"]::before {
+                left: 50%;
+                -webkit-transform: translate(-50%, .5em);
+                transform: translate(-50%, .5em);
+            }
+            /* KEYFRAMES */
+            @-webkit-keyframes tooltips-vert {
+                to {
+                    opacity: 0.9;
+                    -webkit-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
+                }
+            }
+            @keyframes tooltips-vert {
+                to {
+                    opacity: 0.9;
+                    -webkit-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
+                }
+            }
+            @-webkit-keyframes tooltips-horz {
+                to {
+                    opacity: 0.9;
+                    -webkit-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+            }
+            @keyframes tooltips-horz {
+                to {
+                    opacity: 0.9;
+                    -webkit-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+            }
+            /* FX All The Things */
+            [tooltip]:not([flow]):hover::after,
+            [tooltip]:not([flow]):hover::before,
+            [tooltip][flow^="down"]:hover::after,
+            [tooltip][flow^="down"]:hover::before {
+                -webkit-animation: tooltips-vert 300ms ease-out forwards;
+                animation: tooltips-vert 300ms ease-out forwards;
+            }
+        }
+    }
+}
+
+
 /* XLarge screens*/
+
+
 /* min-width 1441px, xlarge screens */
+
 @media only screen and (min-width: 90.063em) {}
+
+
 /* XXLarge screens*/
+
+
 /* min-width 1921px, xxlarge screens */
+
 @media only screen and (min-width: 120.063em) {}

@@ -7,39 +7,39 @@
 /* min-width: 320px, mobile-only screens */
 
 @media only screen {
-    .buttons {
+    .about__buttons {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-    }
-    .btn {
-        background-color: $color-pink;
-        border: 0;
-        color: $color-white;
-        font-size: 1rem;
-        width: 100px;
-        height: 30px;
-        margin-top: 3px;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 0;
-        a {
-            text-decoration: none;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+        .btn {
+            background-color: $color-pink;
+            border: 0;
             color: $color-white;
-            height: inherit;
-            width: inherit;
+            font-size: 1rem;
+            width: 25vw;
+            height: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0;
+            a {
+                text-decoration: none;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                color: $color-white;
+                height: inherit;
+                width: inherit;
+            }
         }
     }
 }
@@ -50,7 +50,13 @@
 
 /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) {}
+@media only screen and (min-width: 40.063em) {
+    .about__buttons {
+        .btn {
+            width: 12vw;
+        }
+    }
+}
 
 
 /* Large screens*/
@@ -59,7 +65,7 @@
 /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) {
-    .buttons {
+    .about__buttons {
         -webkit-box-pack: flex-start;
         -ms-flex-pack: flex-start;
         justify-content: flex-start;
