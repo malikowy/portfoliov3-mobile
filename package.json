@@ -1,0 +1,19 @@
+{
+    "name": "malik_portfolio",
+    "version": "1.0.0",
+    "description": "Gabriel Ignatiuk portfolio page",
+    "main": "index.js",
+    "author": "Gabriel Ignatiuk",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1"
+    },
+    "dependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp-autoprefixer": "^3.1.1",
+        "gulp-clean-css": "^3.0.3",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.4.1",
+        "gulp-uglify": "^2.1.0"
+    }
+}
