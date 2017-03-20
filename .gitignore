@@ -52,3 +52,5 @@ jspm_packages/
 
 # Yarn Integrity file
 .yarn-integrity
+*.xml
+.idea/cv_pagev3.iml
